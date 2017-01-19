@@ -4,7 +4,7 @@ $.ajax({
    dataType: 'json',
    async: false,
    headers: {
-     Authorization: 'Basic ' + btoa(username':'password)
+     Authorization: 'Basic ' + btoa(username + ':' + password)
    },
    success: function(data) {
        console.log(data);
